@@ -1,0 +1,135 @@
+.modalVideos {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.modalVideos .modalCerrar i:hover {
+  color: #000000;
+  background-color: #fed941;
+  border-radius: 50px;
+  border: 1px solid #fed941;
+  transition: 0.4s;
+}
+
+
+.modalVideosChild {
+  background-color: #000000a3;
+  margin: 0 auto;
+  border-radius: 50px 50px 0 0;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  padding: 20px;
+}
+
+.cardsnew img {
+  width: 30%;
+  object-fit: contain;
+  border-radius: 10px;
+  transform: matrix(0.71, -0.51, 1.22, 0.71, 0, 0);
+}
+
+.cardsnew {
+  width: 50%;
+  height: 100%;
+  padding-bottom: 20%;
+}
+
+.titleModal {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.botonesModal .buttonModalAhora i {
+  margin: 0px 8px;
+}
+
+.botonesModal .buttonModalDespues i {
+  margin: 0px 8px;
+}
+
+.buttonModalAhora {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 20%;
+  border-radius: 4px;
+  background: #fed941;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #0c0e16;
+  margin: -10px;
+}
+.buttonModalAhora:hover {
+  background: #0c0e16;
+  color: #fed941;
+}
+
+.buttonModalDespues {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 20%;
+  border-radius: 4px;
+  background: #0c0e16;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #fed941;
+  margin: -10px;
+}
+.buttonModalDespues:hover {
+  background: #fed941;
+  color: #0c0e16;
+}
+
+.botonesModal {
+  display: flex;
+  background-color: #000000a3;
+  width: 82.1%;
+  height: 8%;
+  border-radius: 0 0 50px 50px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.videoModalOpen {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.videoModalOpen iframe {
+  width: 100%;
+  height: 100%;
+}
+.modalCerrar {
+  font-size: 30px;
+  color: rgb(254, 217, 65);
+  left: 37%;
+  top: 8%;
+  position: relative;
+}

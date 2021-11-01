@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/formulario.css">
+    <link rel="stylesheet" href="./styles/modalMovies.css">
+    <link rel="stylesheet" href="./styles/moviesModal.css">
+    <script src="./scripts/splide.min.js"></script>
+    <title>Sprint_1</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="block-buster" src="./images/logo-blockBuster.png" alt="">
+        <div class="container-a">
+            <a id="todas" href="#" class="active">Todas</a>
+            <a id="masValoradas" href="#">Más valoradas</a>
+            <a id="menosValoradas" href="#">Menos valoradas</a>
+
+        </div>
+        <div class="barra-search">
+            <input type="text" id="inputBuscar" class="input-search" placeholder="Busca tu pelicula favorita" />
+            <button class="btnBuscar" id="btnBuscar"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list" id="template-slider">
+            </ul>
+        </div>
+    </div>
+
+
+    <main class="main">
+        <button class="formModal" id="formModal"><i class="fas fa-user"></i></button>
+        <button class="moviesModal" id="moviesModal"><i class="fas fa-video"></i></button>
+        <div class="modal" id="modal">
+
+            <div class="modalChild">
+
+                <form id="form">
+                    <span class="close" id="close"><i class="fas fa-times-circle"></i></span>
+                    <h1 class="title">Registro de Usuario</h1>
+                    <div class="campo">
+                        <input id="name" name="name" type="text" placeholder="Nombre">
+                    </div>
+
+                    <div class="campo">
+                        <input id="lastName" name="lastName" type="text" placeholder="Apellidos">
+                    </div>
+
+                    <div class="campo">
+                        <input id="email" name="email" type="text" placeholder="Email">
+                    </div>
+
+                    <div class="campo">
+                        <input id="id" name="id" type="text" readonly placeholder="Id">
+                    </div>
+                    <button class="submit" id="btnGuardar" type="submit">Guardar</button>
+                    <button class="submit" id="btnCorreo" type="button">Buscar por correo</button>
+                    <button class="submit" id="btnEditar" type="button">Editar</button>
+                    <button class="submit" id="btnEliminar" type="button">Eliminar</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="modalCrudMovies" id="modalCrudMovies">
+
+            <div class="modalCrudMoviesChild">
+    
+                <form class="formCrudMovies" id="formCrudMovies">
+                    <span class="closeCrudMovies" id="closeCrudMovies"><i class="fas fa-times-circle"></i></span>
+                    <h1 class="titleCrudMovies">CRUD PELICULAS</h1>
+                    
+                    <div class="campoCrudMovies">
+                        <input id="nameCrudMovies" name="nameCrudMovies" type="text" placeholder="Nombre de la pelicula">
+                    </div>
+    
+                    <div class="campoCrudMovies">
+                        <input id="overviewCrudMovies" name="overviewCrudMovies" type="text" placeholder="Descripción">
+                    </div>
+    
+                    <div class="campoCrudMovies">
+                        <input id="linkCrudMovies" name="overviewCrudMovies" type="text" placeholder="Link Imagen Peliculas">
+                    </div>
+    
+                    <div class="campoCrudMovies">
+                        <input id="idMovie" name="idMovie" type="text" readonly placeholder="Id">
+                    </div>
+        
+                    <button class="submit" id="btnBucarPelicula" type="button">Buscar Película</button>
+                    <button class="submit" id="btnEditarPelicula" type="button">Editar Película</button>
+                    <button class="submit" id="btnEliminarPelicula" type="button">Eliminar Película</button>
+                </form>
+            </div>
+            <div class="modalMoviesSearcher" id="modalMoviesSearcher">
+
+            </div>
+    
+        </div>
+    </main>
+
+    
+
+    <div class="container-cards" id="container-cards">
+        <h3 class="head-line">Todas las peliculas</h3>
+
+        <div class="cards" id="items-cards"></div>
+
+        <template id="template-card">
+            <div class="card" id="cardSeleccion">
+                <img class="image-cards" src=""></img>
+                <div class="vote-average-container">
+                    <i class="fas fa-star"></i>
+                    <h3 class="status" id="status"></h3>
+                </div>
+            </div>
+        </template>
+    </div>
+
+
+    <div class="modalVideos" id="modalVideos">
+        <span class="modalCerrar" id="modalCerrar"><i class="fas fa-times-circle"></i></span>
+        <div class="modalVideosChild" id="modalVideosChild">
+            
+        </div>
+        <div class="botonesModal">
+            <button class="buttonModalAhora" id="buttonModalAhora"><i class="fas fa-play"></i>VER AHORA</button>
+            <button class="buttonModalDespues" id= "buttonModalDespues"><i class="fas fa-plus"></i>VER DESPUES</button>
+        </div> 
+    </div>
+
+
+    <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>

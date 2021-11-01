@@ -1,0 +1,20 @@
+.moviesModal {
+    position: fixed;
+    bottom: 116px;
+    left: 21px;
+    z-index: 10;
+    outline: none;
+    border: 1px solid #000000;
+    background-color: #fed941;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 60px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.moviesModal:hover {
+    background: #000000;
+    color: #FED941;
+    transition: 0.4s;
+}

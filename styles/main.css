@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
+
+:root {
+  --main-blue-color: #0f0e17;
+  --main-yellow-color: #fed941;
+  --main-grey-color: #a7a9be;
+  --main-black-color: #000000;
+  --main-white-color: #fffffe;
+}
+
+body {
+  background-color: var(--main-blue-color);
+  color: var(--main-white-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  padding: 24px 83px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .block-buster {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 106.81px;
+  height: 64px;
+}
+
+header .container-a {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div a {
+  color: var(--main-white-color);
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+}
+
+header div a:hover,
+header div a.active {
+  color: var(--main-yellow-color);
+  text-decoration-line: underline;
+}
+
+header .barra-search {
+  display: flex;
+  width: 867px;
+  margin-left: 100px;
+  align-items: center;
+}
+
+header .barra-search .input-search {
+  padding: 11px 12px;
+  width: 100%;
+  height: 44px;
+  left: 0px;
+  top: 0px;
+  background: #fffffe;
+  border: 1px solid #fed941;
+  box-sizing: border-box;
+  border-radius: 8px 0px 0px 8px;
+}
+
+header .btnBuscar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  position: static;
+  width: 72px;
+  height: 44px;
+  left: 533.19px;
+  top: 0px;
+  background: #fed941;
+  border: 1px solid #fed941;
+  border-radius: 0px 4px 4px 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+header .btnBuscar:hover {
+  background: #000000;
+  color: #fed941;
+  transition: 0.4s;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-cards .head-line {
+  margin-left: 83px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: left;
+  letter-spacing: -0.005em;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 38px;
+  object-fit: contain;
+}
+
+.card {
+  display: inline-block;
+  width: 220px;
+  height: 330px;
+  left: 0px;
+  top: 0px;
+  margin: 20px 15px;
+}
+
+.card .vote-average-container {
+  content: "";
+  position: relative;
+  display: flex;
+  width: 104px;
+  height: 54px;
+  top: -310px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 50px 50px 0px;
+  background-color: #000000a3;
+  border-bottom: 3px solid #fed941;
+  border-top: 3px solid #fed941;
+  border-right: 3px solid #fed941;
+}
+
+.card .vote-average-container-menosV {
+  content: "";
+  position: relative;
+  display: flex;
+  width: 104px;
+  height: 54px;
+  top: -310px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 50px 50px 0px;
+  background-color: #000000a3;
+  border-bottom: 3px solid #fed941;
+  border-top: 3px solid #fed941;
+  border-right: 3px solid #fed941;
+}
+
+.card .vote-average-container .status {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.card .vote-average-container i {
+  color: #fed941;
+  margin-right: 10px;
+}
+
+.image-cards {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 8px;
+}
+
+#blue {
+  border-bottom: 3px solid #1900ff;
+  border-top: 3px solid #1900ff;
+  border-right: 3px solid #1900ff;
+}
+
+#yellow {
+  border-bottom: 3px solid #fed941;
+  border-top: 3px solid #fed941;
+  border-right: 3px solid #fed941;
+}
+
+/* MEDIA-QUERYS*/
+@media only screen and (max-width: 1130px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .block-buster {
+    width: 213.62px;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    order: 1;
+  }
+  header .container-a {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    order: 3;
+  }
+  header div a {
+    margin-right: 0%;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+  }
+  header .barra-search {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    margin-bottom: 60px;
+    order: 2;
+  }
+
+
+  /* CARDS */
+  .container-cards .head-line {
+    margin-left: 83px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 58px;
+    text-align: left;
+    letter-spacing: -0.005em;
+  }
+  .card {
+    width: 180px;
+    height: 250px;
+    margin: 24px 0px;
+  }
+  .card .vote-average-container {
+    width: 80px;
+    height: 40px;
+    top: -250px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .card .vote-average-container .vote-average {
+    font-size: 18px;
+  }
+}
+
+/* Session image not found */
+
+.imgNoEncontrada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 697px;
+  height: 487.41px;
+  left: 362px;
+  top: 562px;
+}
+
+.imgResultado {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
